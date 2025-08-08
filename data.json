@@ -1,0 +1,42 @@
+{
+  "nosaltres": {
+    "titulo": "Nosaltres",
+    "descripcion": "L'APAAM és una associació de veïns, ens dediquem a millorar l'experiència de la zona amb activitats, iniciatives i projectes que fomenten la convivència i el benestar del nostre barri. Volem que tots els veïns se sentin partícips i protagonistes en la millora de la comunitat.",
+    "imagen": "img/partAlta.webp"
+  },
+  "activitats": [
+    {
+      "titulo": "Caminada popular",
+      "imagen": "img/activitats/caminada.jpg"
+    },
+    {
+      "titulo": "Mercat solidari",
+      "imagen": "img/activitats/mercat.jpg"
+    },
+    {
+      "titulo": "Concurs de fotografia",
+      "imagen": "img/activitats/foto.jpg"
+    },
+        {
+      "titulo": "Festa de la primavera",
+      "imagen": "img/activitats/festa de la primavera.jpg"
+    }
+  ],
+  "junta": [
+    { "nombre": "Papeta", "cargo": "Presidenta", "imagen": "junta/membre1.jpg" },
+    { "nombre": "Pepito", "cargo": "Secretaria O", "imagen": "junta/membre2.jpg" },
+    { "nombre": "Juaneta", "cargo": "Secretaria u", "imagen": "junta/membre3.jpg" },
+    { "nombre": "Joan", "cargo": "Secretaria diners", "imagen": "junta/membre4.jpg" }
+  ],
+  "actes": [
+    { "titulo": "Acta reunió Gener 2025", "archivo": "pdfs/acta-gener-2025.pdf" },
+    { "titulo": "Acta reunió Febrer 2025", "archivo": "pdfs/acta-febrer-2025.pdf" },
+    { "titulo": "Acta reunió Març 2025", "archivo": "pdfs/acta-marc-2025.pdf" },
+    { "titulo": "Acta reunió Abril 2025", "archivo": "pdfs/acta-abril-2025.pdf" }
+  ],
+  "contacte": {
+    "instagram": "https://www.instagram.com/apaamunt",
+    "facebook": "https://www.facebook.com/profile.php?id=61579188960229",
+    "email": "apaamunt@gmail.com"
+  }
+}
