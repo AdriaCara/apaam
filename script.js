@@ -63,4 +63,18 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".address").textContent = "08358 Arenys de Munt, Barcelona, Catalunya";
         })
         .catch(err => console.error("Error carregant el JSON:", err));
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuLinks = document.getElementById("menu-links");
+
+    menuToggle.addEventListener("click", () => {
+        menuLinks.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".menu-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuLinks.classList.remove("show"); // Cierra al hacer clic
+        });
+    });
+
 });
