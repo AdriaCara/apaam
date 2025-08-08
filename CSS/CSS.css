@@ -1,0 +1,252 @@
+/* Secciones generales */
+section {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Scroll que encaja sección por sección */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+/* Sección inicial */
+.initial {
+    background-color: #B5553A;  
+    text-align: center;
+    padding: 2% 0;
+    color: white;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    font-weight: bold;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(169, 38, 38, 0.151);
+    color: white;
+    z-index: 1000;
+
+}
+.menu p { margin: 0; cursor: pointer; }
+.menu p:hover { text-decoration: underline; }
+
+/* Botón */
+.button {
+    background-color: rgb(48, 48, 48);
+    color: #B5553A;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.button:hover { background-color: rgb(80, 80, 80); }
+
+/* Imagen portada */
+.imgPortada {
+    max-width: 30%;
+    margin: 2rem auto;
+    display: block;
+}
+
+.nosaltres {
+    background-color: #95452F;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr; 
+    align-items: start;
+    gap: 1.5rem;
+    padding: 2rem;
+    height: 100vh; 
+}
+
+/* Título arriba a la izquierda */
+.nosaltres h1 {
+    grid-column: 1 / 2; /* en la primera columna */
+    grid-row: 1 / 2; /* primera fila */
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Imagen debajo del título, a la izquierda */
+.imgAboutUs {
+    grid-column: 1 / 2; /* primera columna */
+    grid-row: 2 / 3; /* segunda fila */
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Texto a la derecha de la imagen */
+.textNosaltres {
+    grid-column: 2 / 3; /* segunda columna */
+    grid-row: 2 / 3; /* segunda fila */
+    font-size: 1.3rem; /* más grande */
+    line-height: 1.8;
+}
+
+.textNosaltres p {
+    margin-bottom: 2rem;
+}
+
+/* Sección Activitats */
+.activitats {
+    background-color: #a85a3e;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+}
+
+.activitats h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+/* Contenedor cartas actividades: grid flexible */
+.cardsActivitats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Carta individual actividad */
+.card {
+    background-color: #95452f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3 {
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Sección Junta */
+.junta {
+    background-color: #7a3f2a;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+}
+
+.junta h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+/* Contenedor tarjetas junta: flexible con wrap */
+.cardsJunta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Tarjeta miembro junta */
+.membre {
+    background-color: #5c2f1f;
+    border-radius: 10px;
+    width: 160px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.membre img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    object-fit: cover;
+    height: 160px;
+}
+
+.membre h3 {
+    margin: 0.5rem 0 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.membre p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d4a173;
+}
+
+.actes, .contacte {
+  background-color: #7A3C2B;
+  color: white;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.actesList {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.acta {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactLinks {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+
+.socialLink {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.socialLink:hover {
+  border-color: #B5553A;
+}
