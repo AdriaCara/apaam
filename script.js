@@ -50,10 +50,17 @@ document.addEventListener("DOMContentLoaded", () => {
             // --- Contacte ---
             const contactLinks = document.querySelector(".contactLinks");
             contactLinks.innerHTML = `
-                <a href="${data.contacte.instagram}" target="_blank" class="socialLink">Instagram</a>
-                <a href="${data.contacte.facebook}" target="_blank" class="socialLink">Facebook</a>
-                <a href="mailto:${data.contacte.email}" class="socialLink">${data.contacte.email}</a>
+                <a href="${data.contacte.instagram}" target="_blank" class="socialLink instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="${data.contacte.facebook}" target="_blank" class="socialLink facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="mailto:${data.contacte.email}" class="socialLink email">
+                    <i class="fas fa-envelope"></i> ${data.contacte.email}
+                </a>
             `;
+            document.querySelector(".address").textContent = "08358 Arenys de Munt, Barcelona, Catalunya";
         })
         .catch(err => console.error("Error carregant el JSON:", err));
 });

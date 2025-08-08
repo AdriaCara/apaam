@@ -21,11 +21,11 @@
 
         <div class="title">
             <h1>Benvinguts a l'APAAM!</h1>
-            <p>Coneix la nostra associació de veïns</p>
-            <button onclick="location.href='#nosaltres'" class="button">Explora</button> 
+            <p>Coneix la nostra associació de veïns</p> 
         </div>
 
         <img src="img/radio_7_8_2025.jpeg" class="imgPortada" alt="Fotogràfia a la ràdio al rededor de la taula">
+        <button onclick="location.href='#nosaltres'" class="button">Què som?</button>
     </section>
 
     <!-- Nosaltres -->
@@ -34,7 +34,7 @@
         <img src="" class="imgAboutUs" alt="Vista de la part alta">
         <div class="textNosaltres">
             <p></p>
-            <button onclick="location.href='#activitats'" class="button">Saber més</button>
+            <button onclick="location.href='#activitats'" class="button">Que fem?</button>
         </div>
     </section>
 
@@ -42,25 +42,36 @@
     <section id="activitats" class="activitats">
         <h1>Activitats</h1>
         <div class="cardsActivitats"></div>
+        <p></p>
+        <button onclick="location.href='#junta'" class="button">Qui som?</button>
     </section>
 
     <!-- Junta -->
     <section id="junta" class="junta">
         <h1>Junta</h1>
         <div class="cardsJunta"></div>
+        <p></p>
+        <button onclick="location.href='#actes'" class="button">Com decidim?</button>
     </section>
 
     <!-- Actes -->
     <section id="actes" class="actes">
         <h1>Actes</h1>
         <div class="actesList"></div>
+        <p></p>
+        <button onclick="location.href='#contacte'" class="button">Ajuda'ns</button>
     </section>
 
     <!-- Contacte -->
     <section id="contacte" class="contacte">
         <h1>Contacte</h1>
         <div class="contactLinks"></div>
+        <p class="address">08358 Arenys de Munt, Barcelona, Catalunya</p>
     </section>
+
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <script src="script.js"></script>
 </body>

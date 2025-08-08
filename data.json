@@ -1,38 +1,28 @@
 {
   "nosaltres": {
-    "titulo": "Nosaltres",
+    "titulo": "Què és l'APAAM?",
     "descripcion": "L'APAAM és una associació de veïns, ens dediquem a millorar l'experiència de la zona amb activitats, iniciatives i projectes que fomenten la convivència i el benestar del nostre barri. Volem que tots els veïns se sentin partícips i protagonistes en la millora de la comunitat.",
     "imagen": "img/partAlta.webp"
   },
   "activitats": [
     {
-      "titulo": "Caminada popular",
-      "imagen": "img/activitats/caminada.jpg"
+      "titulo": "Festa de la primavera",
+      "imagen": "img/activitats/Primavera_1_5_25.jpg"
     },
     {
-      "titulo": "Mercat solidari",
-      "imagen": "img/activitats/mercat.jpg"
-    },
-    {
-      "titulo": "Concurs de fotografia",
-      "imagen": "img/activitats/foto.jpg"
+      "titulo": "Anar a la ràdio",
+      "imagen": "img/radio_7_8_2025.jpeg"
     },
         {
-      "titulo": "Festa de la primavera",
-      "imagen": "img/activitats/festa de la primavera.jpg"
+      "titulo": "Assamblea",
+      "imagen": "img/activitats/Primavera_1_5_25.jpg"
     }
   ],
   "junta": [
-    { "nombre": "Papeta", "cargo": "Presidenta", "imagen": "junta/membre1.jpg" },
-    { "nombre": "Pepito", "cargo": "Secretaria O", "imagen": "junta/membre2.jpg" },
-    { "nombre": "Juaneta", "cargo": "Secretaria u", "imagen": "junta/membre3.jpg" },
-    { "nombre": "Joan", "cargo": "Secretaria diners", "imagen": "junta/membre4.jpg" }
+    { "nombre": "Nuri Vilaró", "cargo": "Presidenta", "imagen": "img/junta/nuri_vilaro.png" }
   ],
   "actes": [
-    { "titulo": "Acta reunió Gener 2025", "archivo": "pdfs/acta-gener-2025.pdf" },
-    { "titulo": "Acta reunió Febrer 2025", "archivo": "pdfs/acta-febrer-2025.pdf" },
-    { "titulo": "Acta reunió Març 2025", "archivo": "pdfs/acta-marc-2025.pdf" },
-    { "titulo": "Acta reunió Abril 2025", "archivo": "pdfs/acta-abril-2025.pdf" }
+    { "titulo": "Acta reunió 2 d'Agost 2025", "archivo": "actes/2-8-2025.pdf" }
   ],
   "contacte": {
     "instagram": "https://www.instagram.com/apaamunt",

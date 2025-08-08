@@ -60,6 +60,8 @@ section {
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    max-width: 20rem;
+    align-self: center;
 }
 .button:hover { background-color: rgb(80, 80, 80); }
 
@@ -252,22 +254,43 @@ img {
     align-items: center;
 }
 
-/* Contacto */
 .contactLinks {
     display: flex;
-    gap: 3rem;
-    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
 }
 
 .socialLink {
-    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
+.socialLink i {
+    font-size: 22px;
+}
+
+.socialLink.instagram { color: #E1306C; }
+.socialLink.facebook { color: #1877F2; }
+.socialLink.email { color: #D44638; }
+
 .socialLink:hover {
-    border-color: #B5553A;
+    background-color: #eaeaea;
+    transform: translateY(-2px);
+}
+
+.address {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
 }
 
 /* Responsive ajustes */
